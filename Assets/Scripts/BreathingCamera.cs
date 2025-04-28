@@ -3,40 +3,32 @@ using UnityEngine;
 public class BreathingCamera : MonoBehaviour
 {
     [Header("Breathing Settings")]
-    public float verticalAmplitude = 0.05f;
-    public float verticalFrequency = 1.2f;
+    public float pitchAmplitude = 1.0f; // Up/down tilt
+    public float pitchFrequency = 0.5f;
 
-    public float swayAmplitude = 0.02f;
-    public float swayFrequency = 0.8f;
+    public float yawAmplitude = 0.5f; // Left/right turn
+    public float yawFrequency = 0.3f;
 
-    public float rotationAmplitude = 1f;
-    public float rotationFrequency = 0.5f;
+    public float rollAmplitude = 0.3f; // Roll (side tilt)
+    public float rollFrequency = 0.4f;
 
     public float smoothSpeed = 2f;
 
-    private Vector3 startLocalPos;
     private Quaternion startLocalRot;
 
     private void Start()
     {
-
+        startLocalRot = transform.localRotation;
     }
 
     private void Update()
     {
-        startLocalPos = transform.localPosition;
-        startLocalRot = transform.localRotation;
-        // Breathing motions
-        float verticalOffset = Mathf.Sin(Time.time * verticalFrequency) * verticalAmplitude;
-        float swayOffset = Mathf.Sin(Time.time * swayFrequency) * swayAmplitude;
-        float rotationOffset = Mathf.Sin(Time.time * rotationFrequency) * rotationAmplitude;
+        float pitch = Mathf.Sin(Time.time * pitchFrequency) * pitchAmplitude;
+        float yaw = Mathf.Sin(Time.time * yawFrequency) * yawAmplitude;
+        float roll = Mathf.Sin(Time.time * rollFrequency) * rollAmplitude;
 
-        // Target local position and rotation
-        Vector3 targetLocalPos = startLocalPos + new Vector3(swayOffset, verticalOffset, 0f);
-        Quaternion targetLocalRot = startLocalRot * Quaternion.Euler(0f, 0f, rotationOffset);
+        Quaternion targetRot = startLocalRot * Quaternion.Euler(pitch, yaw, roll);
 
-        // Smooth transition
-        transform.localPosition = Vector3.Lerp(transform.localPosition, targetLocalPos, Time.deltaTime * smoothSpeed);
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetLocalRot, Time.deltaTime * smoothSpeed);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRot, Time.deltaTime * smoothSpeed);
     }
 }
