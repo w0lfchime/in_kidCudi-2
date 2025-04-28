@@ -27,6 +27,16 @@ namespace PSXShaderKit
         [Tooltip("Fakes a low-resolution look by changing how pixel values are sampled.")]
         private float _PixelationFactor = 1;
 
+
+        [Header("Bounds")]
+        [SerializeField] 
+        [Range(0.0f, 1.0f)]
+        private float _PixelationLowerBound = 0.4f;
+        [SerializeField] 
+        [Range(0.0f, 1.0f)]
+        private float _PixelationUpperBound = 1;
+        
+
         [SerializeField]
         [Tooltip("Speed of pixelation oscillation between 0 and 1.")]
         private float _PixelationSpeed = 1f;
@@ -105,7 +115,7 @@ namespace PSXShaderKit
         void Update()
         {
             // Smoothly oscillate the pixelation factor from 0 to 1
-            _PixelationFactor = Mathf.Lerp(0.4f, 1f, Mathf.PingPong(Time.time * _PixelationSpeed, 1f));
+            _PixelationFactor = Mathf.Lerp(_PixelationLowerBound, _PixelationUpperBound, Mathf.PingPong(Time.time * _PixelationSpeed, 1f));
         }
 
         void ApplyPixelationEffect(RenderTexture source, RenderTexture destination)
