@@ -123,6 +123,109 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1572891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 107.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 195.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000001490116
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 536230016294135162, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+      propertyPath: m_Name
+      value: LP_Factory
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -4993774147188889752, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+    - {fileID: 8892278131620488953, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1158ae52c8242248b62e52aaf7d008b, type: 3}
 --- !u!1001 &33643952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1893,11 +1996,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: baseSpeed
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: spawnScale
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: spawnInterval
@@ -3501,7 +3604,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: acd795b07afad2a48bac555dd35207cc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 483ebfbd5071c2a4dad2b879bc8aeb5a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3771,11 +3874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: baseSpeed
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: spawnScale
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2108723597317135379, guid: eb051fd43b4f9a948b78c6f17275a73f, type: 3}
       propertyPath: spawnInterval
@@ -4015,7 +4118,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 47.9
+  field of view: 82.5
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -4584,12 +4687,66 @@ MonoBehaviour:
   audioSource: {fileID: 1191707514}
   uiText: {fileID: 546697377}
   lyricEvents:
-  - triggerTime: 2
-    lyricText: fuck one
-  - triggerTime: 5
-    lyricText: fuck two
-  - triggerTime: 14
-    lyricText: fuck three
+  - triggerTime: 25
+    lyricText: crush a bit. little bit.
+  - triggerTime: 27
+    lyricText: roll it up. take a hit
+  - triggerTime: 30
+    lyricText: feeling lit feeling right
+  - triggerTime: 30
+    lyricText: feeling lit feeling right
+  - triggerTime: 32
+    lyricText: two am, summer nights
+  - triggerTime: 34
+    lyricText: I dont care, hand on the wheel
+  - triggerTime: 36
+    lyricText: driving drunk im doing my thing
+  - triggerTime: 38
+    lyricText: rolling the midwest side and out
+  - triggerTime: 40
+    lyricText: living my life, getting our dreams
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 45
+    lyricText: im screaming out
+  - triggerTime: 46
+    lyricText: fuck that
+  - triggerTime: 47
+    lyricText: ima do just what I want
+  - triggerTime: 49
+    lyricText: looking ahead. no turning back.
+  - triggerTime: 51
+    lyricText: if i fall, if i die
+  - triggerTime: 53
+    lyricText: know i lived it to the fullest
+  - triggerTime: 55
+    lyricText: if I fall, if I die
+  - triggerTime: 57
+    lyricText: 'know I lived and missed some bullets '
+  - triggerTime: 59
+    lyricText: im in the pursuit of happiness
+  - triggerTime: 62
+    lyricText: and i know
+  - triggerTime: 63
+    lyricText: 'everything that shine '
+  - triggerTime: 65
+    lyricText: aint always gonna be gold
+  - triggerTime: 69
+    lyricText: ill be fine once I get it
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 73
+    lyricText: 'ill be good '
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 43
+    lyricText: people told me slow my roll
+  - triggerTime: 43
+    lyricText: people told me slow my roll
 --- !u!23 &1636113179
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8142,7 +8299,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2496207897666424650}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -8395,7 +8552,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81400964541593456}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -8755,3 +8912,4 @@ SceneRoots:
   - {fileID: 1539333894}
   - {fileID: 33643952}
   - {fileID: 513155722}
+  - {fileID: 1572891}

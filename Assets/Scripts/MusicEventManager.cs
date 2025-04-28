@@ -57,13 +57,13 @@ public class MusicEventManager : MonoBehaviour
         isFading = true;
 
         // Fade out
-        yield return StartCoroutine(FadeTextAlpha(0f, 0.5f));
+        yield return StartCoroutine(FadeTextAlpha(0f, 0.2f));
 
         // Change text
         uiText.text = newText;
 
         // Fade in
-        yield return StartCoroutine(FadeTextAlpha(1f, 0.5f));
+        yield return StartCoroutine(FadeTextAlpha(1f, 0.2f));
 
         isFading = false;
     }

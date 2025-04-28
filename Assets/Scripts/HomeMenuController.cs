@@ -18,14 +18,13 @@ public class HomeMenuController : MonoBehaviour
     public Texture newScreenTexture;
 
     [Header("Objects To Enable Later")]
-    public List<GameObject> objectsToEnable = new List<GameObject>(); // <-- NEW FIELD
+    public List<GameObject> objectsToEnable = new List<GameObject>();
 
     private void Start()
     {
         playButton.onClick.AddListener(OnPlayPressed);
         exitButton.onClick.AddListener(OnExitPressed);
 
-        // Disable the objects at start
         foreach (var obj in objectsToEnable)
         {
             if (obj != null)
@@ -62,8 +61,11 @@ public class HomeMenuController : MonoBehaviour
         // Move camera smoothly
         Vector3 startPos = mainCamera.transform.position;
         Quaternion startRot = mainCamera.transform.rotation;
+        float startFOV = mainCamera.fieldOfView;
+
         Vector3 targetPos = cameraTarget.position;
         Quaternion targetRot = cameraTarget.rotation;
+        float targetFOV = 52f;
 
         t = 0f;
         while (t < cameraMoveDuration)
@@ -72,10 +74,15 @@ public class HomeMenuController : MonoBehaviour
             float lerpT = t / cameraMoveDuration;
             mainCamera.transform.position = Vector3.Lerp(startPos, targetPos, lerpT);
             mainCamera.transform.rotation = Quaternion.Slerp(startRot, targetRot, lerpT);
+            mainCamera.fieldOfView = Mathf.Lerp(startFOV, targetFOV, lerpT);
             yield return null;
         }
 
-        // Wait a few seconds
+        // Final snap to ensure exact end values
+        mainCamera.transform.position = targetPos;
+        mainCamera.transform.rotation = targetRot;
+        mainCamera.fieldOfView = targetFOV;
+
         yield return new WaitForSeconds(0.1f);
 
         // Set screen texture
